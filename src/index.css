@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+    --spacing: 20px; 
+  }
+
+  .animate-slide {
+    animation: slide 3s alternate infinite linear; 
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(300px); 
+    }
+    100%{
+        transform: translateX(0px); 
+      }
+  }
